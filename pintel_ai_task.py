@@ -51,7 +51,7 @@ risk_section = [entry for entry in data if 'risk' in entry['section_name']]
 import openai
 
 def analyze_risk(content):
-    openai.api_key = 'sk-6lCrCvxm6JvH993dYZLWOdriEcTHx_uHstQOWpcE56T3BlbkFJFX6bH-QQkCFgjtDxUYNASl6ADnFgqMR9Joood_arkA'
+    openai.api_key = 'Openai_api_key'
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=f"List 3-5 risks the company might be facing from the following text: {content}",
